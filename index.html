@@ -1,10 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html>
 
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="pt-br">
+        <title>Animações com Angular JS</title>
+
+        <!--  =====================================  JS  ============================================ -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.8.2/angular-animate.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!--  =====================================  JS  ============================================ -->
+
+
+        <!--  =====================================  CSS ============================================ -->
+        <link rel="stylesheet" href="app.css">
+        <!--  =====================================  CSS ============================================ -->
+
+
+        <!--  ================================== CONTROLLER ========================================= -->
+        <script src="controller.js"></script>
+        <!--  ================================== CONTROLLER ========================================= -->
+
+
+        <style>
+
+        .red {
+            color:red;
+            }
+            .blue {
+            color:blue;
+            }
+
+
+</style>
+
+
+
+    </head>
+
+
+    <body ng-app="myApp" ng-controller="myCtrl">
+
+
+
+
+    <div>
+        Exemplo 1: <input type="checkbox" ng-model="mostrar_1">
+        <div ng-style="{'background-color':'green'}" ng-class="{'animate__animated animate__backInDown': mostrar_1}" ng-show="mostrar_1" >
+
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+    </div>
+
+
+    <div>
+        Exemplo 2: <input type="checkbox" ng-model="mostrar_2">
+        <div ng-style="{'background-color':'green'}" ng-class="{'animate__animated animate__backInLeft': mostrar_2}" ng-show="mostrar_2" >
+
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+    </div>
+
+
+
+    <div>
+        Exemplo 3: <input type="checkbox" ng-model="mostrar_3">
+        <div ng-style="{'background-color':'green'}" ng-class="{'animate__animated animate__fadeInLeftBig': mostrar_3}" ng-show="mostrar_3" >
+
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+    </div>
+
+
+    <div>
+        Exemplo 4: <input type="checkbox" ng-model="mostrar_4">
+        <div ng-style="{'background-color':'green'}" ng-class="{'animate__animated animate__fadeOutDown': !mostrar_4}" ng-show="mostrar_4" >
+
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+    </div>
+
+
+    <div>
+        Exemplo 5: <input type="checkbox" ng-model="mostrar_5">
+        <div ng-style="{'background-color':'green'}" ng-class="{'animate__animated animate__rotateOutDownLeft': !mostrar_5}" ng-show="mostrar_5" >
+
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+    </div>
+
+    <div>
+        Exemplo 6: <input type="checkbox" ng-model="mostrar_6">
+        <div ng-style="{'background-color':'yellow'}" ng-class="{'animate__animated animate__rotateInUpRight': mostrar_6, 'animate__animated animate__rotateOutDownLeft': !mostrar_6}" ng-show="mostrar_6" >
+
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+    </div>
+
+
+    <div>
+        Exemplo 7: <input type="checkbox" ng-model="mostrar_7">
+        <div ng-style="{'background-color':'pink'}" ng-class="estilo_1(mostrar_7)" ng-show="mostrar_7" >
+
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+    </div>
+
+
+
+    </body>
 </html>
